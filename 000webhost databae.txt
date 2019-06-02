@@ -1,0 +1,3 @@
+database::ecic
+user::ecic
+password:ecic123

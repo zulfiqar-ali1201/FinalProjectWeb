@@ -1,0 +1,602 @@
+/*------------- REUSABLE---------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+body{
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color:#0E0E0E;
+    font-size: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+.main_title {
+  text-align: center;
+  max-width: 800px;
+  margin: 0px auto 10px; 
+}
+
+.main_title h2 {
+    font-size: 36px;
+    color: #222222;
+    margin-bottom: 6px; 
+}
+.main_title p {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #777777;
+    margin-bottom: 0px; 
+}
+
+.sub_title {
+  text-align: center;
+  max-width: 700px;
+  margin: 0px auto 20px; 
+  border-top: 1px solid #2ECC40;
+  border-bottom: 1px solid #2ECC40;
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+
+.sub_title h3 {
+    font-size: 30px;
+    color: #222222;
+    margin-bottom: 0px; 
+    text-transform: uppercase;
+}
+.sub_title p {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #777777;
+    margin-bottom: 0px; 
+}
+
+h1,h2,h3{
+    text-transform:uppercase;
+}
+ 
+
+h4,h5,h6{
+     text-transform:capitalize;
+}
+
+
+
+
+p::first-letter{
+    text-transform: uppercase;
+}
+
+
+.icon-text{
+    display: inline-block;
+    width: 30px;
+    font-size:25px;
+    margin-right: 10px;
+    
+    /*secrets to align text and icons */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/*--------------- Top Menu ------------------- */
+.top_bg{
+    background: #f5f5f5;
+}
+
+ul.social-network{
+    display: inline-block;
+    list-style-type: none;
+}
+
+ul.social-network li{
+    display: inline-block;
+    float: left;
+    font-size:2rem;
+    margin-right:1rem;
+}
+ul.social-network li a{
+    color:#2ECC40;
+}
+ul.contacts{
+    display: inline-block;
+    list-style-type: none;
+}
+
+/*----------------Navigation------------------- */
+
+
+.navbar{
+    text-transform: uppercase;
+    font-size:.9rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    background: rgba(0,0,0,0.7) !important;
+}
+
+.navbar-brand img{
+    height:2.5rem;
+}
+
+.navbar-nav li{
+    padding-right: 0.7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color:#fff;
+    padding-top:0.7rem;
+    
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color:#2ECC40;
+}
+
+/*----------------Fixed heading------------------- */
+
+.home-inner{
+    background: url('img/computers.png');
+}
+
+.caption{
+    width:100%;
+    max-width: 100%;
+    position: absolute;
+    top:40%;
+    text-transform: uppercase;
+    color:#fff;
+    z-index: 1;
+}
+
+.caption h1{
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.4;
+    text-shadow: .1rem .1rem 0.8rem #000;
+    padding-bottom: 1rem;
+}
+
+.caption h3{
+    font-size:2rem;
+    text-shadow: .1rem .1rem .5rem #000;
+    letter-spacing: 0.5rem;
+    padding-bottom:1.5rem;
+    color: #fff;
+}
+
+
+/*----------------Affiliations Area------------------- */
+
+.affiliations_area {
+
+  background:#f9f9ff;
+    padding-top:40px;
+}
+
+.affiliations_area .container-fluid{
+    
+}
+
+.affiliations_inner {
+ 
+}
+
+.affiliations_item {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px; 
+}
+
+.affiliations_item .affiliations_img {
+    position: relative; 
+}
+
+.affiliations_item .affiliations_img img {
+      width: 50%; 
+      
+}
+
+.affiliations_item .affiliations_img:before {
+      content: "";
+      background: rgba(255, 255, 255, 0.65);
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: all 300ms ease;
+     
+}
+
+/*
+.affiliations_item .affiliations_img .hover {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        opacity: 0;
+        transition: all 300ms linear 0s; 
+
+}
+
+.affiliations_item .affiliations_img .hover a {
+    font-size: 14px;
+    color: #777777;
+    margin-right: 20px;
+    transition: all 300ms linear 0s; 
+
+}
+.affiliations_item .affiliations_img .hover a:last-child {
+    margin-right: 0px; 
+}
+.affiliations_item .affiliations_img .hover a:hover {
+    color: #4dbf1c; 
+}
+
+*/
+.affiliations_item .affiliations_name {
+    text-align: center;
+    margin-top: 20px; 
+}
+.affiliations_item .affiliations_name h4 {
+    margin-bottom: 5px;
+    color: #222222;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 300ms linear 0s;
+}
+.affiliations_item .affiliations_name p {
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 0px; 
+    text-transform:uppercase;
+}
+.affiliations_item:hover .affiliations_img:before {
+    opacity: 1; 
+}
+.affiliations_item:hover .affiliations_img .hover {
+    opacity: 1; 
+}
+.affiliations_item:hover .affiliations_name h4 {
+    color: #4dbf1c; 
+}
+
+
+/*----------------LAtest News and Announcements------------------- */
+
+.latest_news_area{
+    padding-top:40px;
+}
+
+.latest_news_inner {
+}
+
+.l_news_item {
+  margin-bottom: 30px; 
+}
+
+  .l_news_item .date {
+    font-size: 13px;
+    font-weight: normal;
+    color: #777777;
+    margin-top: 20px;
+    display: block;
+    margin-bottom: 15px; 
+}
+
+  .l_news_item h4 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #222222;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    transition: all 300ms linear 0s; 
+
+}
+  .l_news_item p {
+    margin-bottom: 0px; 
+}
+
+  .l_news_item:hover h4 {
+    color: #4dbf1c; 
+}
+
+/*----------------Courses Section------------------- */
+
+.courses_area{
+    background: #f9f9ff; 
+    padding-top:40px;
+}
+.courses_area .card{
+    border-radius: 0px;
+    box-shadow: 5px 5px 6px #9095a0;
+    transition: all 0.3s ease-in;
+    -webkit-transition:all 0.3s ease-in;
+    -moz-transition:all 0.3s ease-in;
+    margin-bottom: 40px;
+}
+.course_body h4{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #222222;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    transition: all 300ms linear 0s; 
+}
+
+.course_body h5{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 550;
+    color: #222222;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    transition: all 300ms linear 0s; 
+}
+
+.course_body h4:hover{
+   color: #4dbf1c; 
+}
+
+
+
+.card-body{
+   
+    margin-bottom: 10px;
+}
+.card-footer{
+    border:0px;
+    background:none;
+}
+.card-footer h5{
+    font-weight: 500;
+    color:#fff;
+}
+
+.course_body img{
+    margin-top:-70px;
+
+}
+.card_bg{
+    background:
+        url(img/card_bg_bottom.png) bottom center no-repeat,
+        url(img/card_bg_top.jpg) top center no-repeat;
+}
+
+/* -------------- Gallery Section -------------- */
+.gallery_area{
+    padding-top:40px;
+}
+
+.gallery_inner img{
+    transition: 1s;
+}
+
+.gallery_inner img:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+.active, .btn:hover {
+  background-color: #666;
+  color: white;
+}
+
+
+/* -------------- about us -------------- */
+
+.about_area{
+     background: #f9f9ff; 
+    padding-top:40px;
+}
+.about_content{
+	padding-left:30px;
+	padding-right:30px;
+    margin-bottom: 45px;
+}
+
+
+.about_content h4{
+	color:#222;
+	font-weight:600;
+}
+
+.about_content p{
+	line-height:130%;
+	text-align:justify;
+}
+
+.about_content ul{
+	clear:both;
+	display:inline;
+	list-style:disk;
+}
+
+.about_content ul li{
+	list-style:disk;
+	text-align:left;
+	list-style-type:disc;
+}
+
+.about_content h5{
+	color:#222;
+	font-weight:600;
+	margin-top:10px;
+	float:left;
+	text-align:center;
+}
+.about_content .row img{
+	width:100%;
+	height:250px;
+}
+
+/* -------------- Contact us-------------- */
+.contact_area{
+    padding-top:40px;
+
+	
+}
+
+.campus .map{
+    width: 92%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.add_block{
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.campus .add_block .icon_small{
+    display: inline-block;
+   
+    text-align: center;
+    color:#69D300;
+    font-size: 40px;
+    margin-right: 10px;
+    
+    /*secrets to align text and icons */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+.campus .add_block p{
+
+    width: 92%;
+    text-align: center;
+}
+
+.contact_area form{
+	width:100%;
+}
+
+/*----------------Foooter Section ------------------- */
+
+.footer-wrap{
+    background:#222;
+}
+
+.footer_inner{
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+
+.footer_inner .cols h4{
+    color:#fff;
+    text-align: center;
+}
+
+.footer_inner .cols ul li a{
+    color:#ddd;
+    font-weight: 300;
+    text-align: center;
+}
+
+.footer_inner .copyright h4 img{
+    height:2.5rem;
+    margin-bottom:5px;
+}
+
+.footer_inner .copyright h4{
+    text-align:center;
+    color:#dedede;
+
+}
+
+
+
+
+
+
+/* -------------- -------------- */
+/*----COURSE DETAILS-------------*/
+/* -------------- -------------- */
+.course_details{
+
+  background:#f9f9ff;
+    padding-top:40px;
+  
+}
+
+.course_details .container-fluid{
+    
+}
+
+.inner_details{
+    border-left:1px solid #ddd;
+     border-right:1px solid #ddd;
+     border-bottom:1px solid #ddd;
+}
+
+.tab_content .content{
+    padding:5% 5%;
+    background:#fff;
+}
+.tab_content .content h1,h2,h3,h4,h5{
+    color:#222222;
+}
+.tab_content .content p,.tab_content .contentul ul, .tab_content .content li{
+    color:#777;
+}
+
+.tab_content .content h2{
+    margin-bottom: 20px;
+}
+
+.tab_content .content h3{
+    border-bottom:1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.tab_content .content ul{
+    list-style: disc;
+    border-bottom:1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.courses_list{
+    border:1px solid #ddd;
+    background: #fff;
+    margin-top:45px;
+}
+
+.list_courses{
+    padding:5% 5%;
+    background:#fff;
+}
+.list_courses ul li h3{
+    color:#222222;
+    font-size:1.5rem;
+    margin-top:20px;
+}
+
+.list_courses ul li ul li{
+    list-style:disc;
+}
+
+.list_courses ul li ul li a{
+    color:#777;
+}
+
+/*------Demo Form -------*/
+.tab_content form label{
+    color:#222;
+}
+
+

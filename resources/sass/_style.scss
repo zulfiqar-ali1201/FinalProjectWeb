@@ -1,0 +1,99 @@
+/*------------- REUSABLE---------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+body{
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color:#0E0E0E;
+    font-size: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/*--------------- Top Menu ------------------- */
+.top_bg{
+    background: #f5f5f5;
+}
+
+ul.social-network{
+    display: inline-block;
+    list-style-type: none;
+}
+
+ul.social-network li{
+    display: inline-block;
+  
+    font-size:2rem;
+    margin-right:1rem;
+}
+ul.social-network li a{
+    color:#2ECC40;
+}
+
+
+/*----------------Navigation------------------- */
+
+
+.navbar{
+    text-transform: uppercase;
+    font-size:.9rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    background: rgba(0,0,0,0.7) !important;
+}
+
+.navbar-brand img{
+    height:2.5rem;
+}
+
+.navbar-nav li{
+    padding-right: 0.7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color:#fff;
+    padding-top:0.7rem;
+    
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color:#222;
+}
+
+/*----------------Fixed heading------------------- */
+
+.home-inner{
+    background-image: url('/images/computers.png');
+  
+}
+
+.caption{
+    width:100%;
+    max-width: 100%;
+    position: absolute;
+    top:40%;
+    text-transform: uppercase;
+    color:#fff;
+    z-index: 1;
+}
+
+.caption h1{
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.4;
+    text-shadow: .1rem .1rem 0.8rem #000;
+    padding-bottom: 1rem;
+}
+
+.caption h3{
+    font-size:2rem;
+    text-shadow: .1rem .1rem .5rem #000;
+    letter-spacing: 0.5rem;
+    padding-bottom:1.5rem;
+    color: #fff;
+}
